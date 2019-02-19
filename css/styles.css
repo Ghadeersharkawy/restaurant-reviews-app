@@ -277,9 +277,9 @@ nav h1 a {
 
 /* ====================== Media Queries ====================== */
 
-@media screen and (max-width : 320px){
+@media screen and (min-width : 320px){
   #restaurants-list li {
-    margin: 15px 0px;
+    margin: 15px auto;
     padding: 10px 10px;
     max-width: 100%;
 }
@@ -294,7 +294,7 @@ nav h1 a {
   margin: 3% 20px;
 }
 #restaurants-list .restaurant-img{
-  min-height: 100%;
+  max-height: 100%;
 }
 .inside #map-container {
   height: 38%;
@@ -318,19 +318,44 @@ nav h1 a {
 }
 }
 
-@media screen and (min-width : 480px){
-
+@media screen and (min-width :321px) and (max-width : 480px){
+  .filter-options {
+    flex-direction: column;
+    /* justify-content: flex-end; */
+}
+#restaurants-list li {
+  padding: 10px 10%;
+}
+.inside #map-container {
+  height: 50%;
+  top: 22%;
+}
 }
 @media screen and (min-width: 768px) {
-
-}
-@media screen and (min-width: 1024px) {
-
-}
-@media screen and (min-width: 1200px) {
   #restaurants-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
   }
+  .inside #map-container {
+    height: 60%;}
+    #restaurant-container {
+      padding: 62% 0px 30px;}
+}
+@media screen and (min-width: 1024px) {
+  .inside #map-container {
+    height: 87%;
+    top: 16%;
+    width: 50%;
+}
+#restaurant-container{
+  padding: 140px 40px 30px;
+  width: 50%;}
+  #reviews-container {
+    padding: 60px 40px 30px;
+    width: 47%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  
 }
