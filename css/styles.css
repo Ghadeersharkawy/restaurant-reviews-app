@@ -18,11 +18,11 @@ ul, li {
 	color: #333;
 }
 a {
-	color: orange;
+	color: #01447e;
 	text-decoration: none;
 }
 a:hover, a:focus {
-	color: #3397db;
+	color: #01447e;
 	text-decoration: none;
 }
 a img{
@@ -41,12 +41,18 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 #footer {
   background-color: #444;
-  color: #aaa;
+  color:#dcdcdc;
   font-size: 8pt;
   letter-spacing: 1px;
   padding: 25px;
   text-align: center;
   text-transform: uppercase;
+}
+#footer a strong{
+  color:#b0e9ff;
+}
+.leaflet-container a {
+  color: #01447e!important;
 }
 /* ====================== Navigation ====================== */
 nav {
@@ -108,7 +114,7 @@ nav h1 a {
 .filter-options {
   width: 100%;
   height: 50px;
-  background-color: #3397DB;
+  background-color: #01447e;
   align-items: center;
 }
 .filter-options h2 {
@@ -129,7 +135,14 @@ nav h1 a {
   padding: 0 10px;
   width: 200px;
 }
-
+.filter-options select:focus {
+  outline: 0;
+  box-shadow: 0 0 8px 3px rgba(255, 254, 255, 0.849);
+}
+#restaurants-list li a:focus {
+  outline: 0;
+  box-shadow: 0 0 8px 3px rgba(245, 133, 0, 0.78);
+}
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
   background-color: #f3f3f3;
@@ -157,7 +170,7 @@ nav h1 a {
   min-width: 100%;
 }
 #restaurants-list li h1 {
-  color: #f18200;
+  color: #01447e;
   font-family: Arial,sans-serif;
   font-size: 14pt;
   font-weight: 200;
@@ -171,8 +184,8 @@ nav h1 a {
   font-size: 11pt;
 }
 #restaurants-list li a {
-  background-color: orange;
-  border-bottom: 3px solid #eee;
+  background-color: #01447e;
+  border-bottom: 3px solid #01447e;
   color: #fff;
   display: inline-block;
   font-size: 10pt;
@@ -209,7 +222,7 @@ nav h1 a {
   width: 50%;
 }
 #restaurant-name {
-  color: #f18200;
+  color: #01447e;
   font-family: Arial,sans-serif;
   font-size: 20pt;
   font-weight: 200;
@@ -247,7 +260,7 @@ nav h1 a {
   padding: 30px 40px 80px;
 }
 #reviews-container h2 {
-  color: #f58500;
+  color: #01447e;
   font-size: 24pt;
   font-weight: 300;
   letter-spacing: -1px;
@@ -357,5 +370,7 @@ nav h1 a {
   }
 }
 @media screen and (min-width: 1200px) {
-  
+  .inside #footer {
+    width: calc(50% - 50px);
+}
 }
