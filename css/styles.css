@@ -131,7 +131,7 @@ nav h1 a {
 
 /* Add a color to all links inside the list */
 #breadcrumb li a {
-  color: #0275d8;
+  color: #01447e;
   text-decoration: none;
 }
 
@@ -400,6 +400,17 @@ nav h1 a {
   #reviews-container {
     width: calc(100% - 80px);
   }
+  .skip {
+    width: 125px;
+    height: 35px;
+    line-height: 35px;
+    left: 44%;
+    position: absolute;
+    top: 80px;
+    z-index: 1000;
+    background: #fff;
+    padding: 10px;
+  }
 }
 
 @media screen and (min-width :321px) and (max-width : 480px) {
@@ -433,18 +444,7 @@ nav h1 a {
     padding: 62% 0px 30px;
   }
 
-  .skip {
-
-    width: 125px;
-    height: 35px;
-    line-height: 35px;
-    left: 44%;
-    position: absolute;
-    top: 80px;
-    z-index: 1000;
-    background: #fff;
-    padding: 10px;
-  }
+  
 }
 
 @media screen and (min-width: 1024px) {
